@@ -1,0 +1,98 @@
+Final Project Readme
+Cini Kolath Abraham
+
+############ Project Summary ############
+Business Domain which I selected is BIRTH REGISTRY SYSTEM where the details of every new born will be recorded in an online portal. 
+This will be very much useful for parents and the hospital authorities. I found this topic very interesting as this is not a very common domain and hence, I can think differently.My entities for this domain are Baby, BabyGender, DeliveryVisit, Hospital and Parent. 
+There are many relationships between the entities.
+For each of my entities, there are many attributes which are related to each other such as: Baby – Baby_ID, FirstName, LastName, BirthDate, BirthTime, Hospital – Hospital_ID, HospitalName, City, Parent – Patient_ID, Father_Name, Mother_Name, Contact, Email, BabyGender – Female,Male, DeliveryVisit – Id, Dateofvisit, DeliveryTime, MotherName, DoctorName. Therefore, each requirement of the specification is fulfilled by allowing the user to login anytime and view or update their details and can make visits according to their convenience. 
+Hospital authorities can view the patient visits in an appropriate way and can update as well. 
+
+
+############ Design ############
+o Use this section to describe the design of your final project’s functionality
+
+The initial step is that a Parent making a visit at the hospital ( One parent can make multiple
+number of visits and there for the relationship is OneToMany bi-directional). A hospital can have many
+visits(OneToMany). At the time of visit, Parent will be giving the details such as firstname, lastname,
+contact,email and the parent will be provided with a doctorname, patient_id, Dateofvisit, DeliveryTime(if
+applicable). Therefore, all these attributes will contain specific details. If the parent is making another visit
+the next day or on another date for the delivery, a baby will be born and the baby will be provided with a
+unique baby_id and the attributes such as firstname, lastname, birthtime, birthdate, baby gender will be
+updated. Here, the parent is supposed to visit the same hospital if a visit is required again in order to retain
+the earlier records. A hospital will get a separate database for “new born” by using this web application.
+Each visit of parent will be added along with the baby details and the doctor details who consulted. These
+records are highly important in order to have the data for future uses such as the baby born in this hospital
+requires an emergency medication after a month. Hence this application could be used by users such as
+Parent – father/mother using their patient_id and thus get the details regarding the delivery. This can be
+used by the hospital staff to retain the details of this patient if the parent is making a revisit after some
+months or even years using the patient_id or the unique baby_id. This can also be used by the official
+authorities in case of any enquiries/ birthcertificate confirmations in future. New users can use the signup button to create a new account with the system.
+Multiple hospital visits can be made by the patients by selecting various types of visits such as regular checkup,urgent care, normal visit.
+The appointments can be modified or even cancelled by the patients or by the hospital authorities. This is the basic functionality of this project.
+Navigation:
+Login page -- All users can navigate to the login page and can select "Create new user" if they are new
+Welcome page -- Welcome page is the landing page with respect to each user. The information is mentioned along with the functionalities for each user to
+create new visit, edit or cancel the visit, add new user, cancel the account, etc.
+The admin have access to all of these.
+
+############ Requirements (Installation, Compile, Runtime, Database, etc) ############ 
+
+Apache Netbeans Software to be installed with JAVA 8 and JAKARTA EE 8
+MYSQL Qorkbench with database ITMD4515, junit jupiter engine version 5.8.1,apache maven plugin persistence,bean validations and the payara server
+
+
+############ Expected Results/Known Issues  ############
+
+The expected outcome was to successfully register a patient record to the portal and to manage the patient visits on a daily basis. There are no issues with the application and
+hence the expected results 
+Working script:
+Usernames – Passwords
+
+admin – admin
+
+parent1 – parent1
+
+parent2 – parent2
+
+hospital1 – hospital1
+
+hospital2 – hospital2
+
+The roles assigned to each authenticated user will have:
+admin – can access to admin
+
+admin – cannot access hospital, parent
+
+hospital1 – can access to admin, hospital
+
+hospital1 – cannot access to parent
+
+hospital2 – cannot access to admin
+
+hospital2 – can access to hospital, parent
+
+parent1 – cannot access to admin, hospital
+
+parent1 – can access to parent
+
+parent2 – cannot access to admin, hospital
+
+parent2 – can access to parent
+
+(Any new user can enter username and password as they wish and can login with the same credentials)
+
+############ Development Insights ############
+
+This was one of the great great great courses which I took. I learned a lot about the Java, validations, bootstraps, JPA query language, annotations and lot more 
+which were relatively new for me. I really enjoyed this course starting from the semester. After this course, I now decided to turn my career to Java ONLY. 
+Therefore, that's the impact this course and professor had made on me!
+Telling about the project, I am really happy that I was able to go along with the class and lectures so far and have a perfectly working application 
+with me which I was designing for 5 months. I would like to explore more and more about the same. I would like to learn about the concepts that are missed
+during the sections due to the time frame. Thank you very much professor for dealing with the issues related to this lab which I had. 
+Kindly request you to consider my project since I tried my best through out this semester. There won't be any big changes with the layout. 
+But, I am trying something related to this application in parallel and please understand that this project is the maximum which I am capable of and that
+does not mean that I am not trying anything apart from the lecture. I have watched multiple youtube videos and also took courses and have implemented those and trying 
+to implement more. The reason why so many changes are not made is because of the time challenges and stress. Hope you will understand.
+Kind request to consider my future emails related to the enhancements of this same project which I am very much interested to. 
+
