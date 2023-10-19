@@ -1,0 +1,95 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Rubrik", sans-serif;
+    letter-spacing: 0.4px;
+}
+body{
+    background :url(https://media.istockphoto.com/photos/top-view-of-kitchen-utensils-on-rustic-table-with-copy-space-picture-id1284023205?k=20&m=1284023205&s=170667a&w=0&h=e0a0_T7LPBPoMu0W5gh38j6cgWpA0TNuG-w5uiApPZE=) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.billclass{
+    background-color:bisque;
+    opacity: 1;
+    width: 450px;
+    padding: 50px 40px;
+    border-radius: 10px;
+    border-color: #44475b;
+    box-shadow: #44475b;
+
+    position:absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+    box-shadow: 0 30px 50px rgba(0,0,0,0.1);
+}
+#heading2{
+    padding-left: 25%;
+}
+
+#ErrorMsg{
+    padding-left: 25%;
+    color: red;
+}
+.calculator{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 12px 0;
+}
+.arrange{
+    font-size: 16px;
+    color: #44475b;
+    font-weight: 400;
+}
+.values{
+    color: #44475b;
+    font-weight: 600;
+    font-size: 18px;
+}
+.input-box{
+
+    background-color: antiquewhite; 
+    color: #6f6df4;
+    padding: 5px;
+}
+#bill{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    width: 100px;
+    text-align: right;
+    color: #6f6df4;
+}
+hr{
+    border: none;
+    border-bottom: 1px solid wheat;
+}
+input[type="range"]{
+    width: 100%;
+    cursor: pointer;
+}
+input[type="range"]:not(:last-child){
+    margin-bottom: 5px;
+
+}
+section:not(:last-child){
+    margin-bottom: 40px;
+}
+section:not(:first-child){
+    margin-top: 40px;
+}
+section:last-child{
+    background-color: whitesmoke;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+section:last-child .val,
+section:last-child .lbl{
+    color: blue;
+}

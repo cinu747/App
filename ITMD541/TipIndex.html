@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" href="Tipstyle.css">
+</head>
+<body>
+    <form>
+    <div class="billclass">
+        <h3> ITMD 541:Lab3/Cini Kolath Abraham</h3>
+        <h1 id="heading2">Tip Calculator</h1>
+        <h4 name="ErrorMsg" id="ErrorMsg"></h4>
+        <section>
+            <div class="calculator">  
+                <label for="bill" class="arrange">
+                    Bill Total
+                </label>
+                <div class="input-box">
+                    <span>$</span>
+                    <input type="text" value="0" id="bill" class="values">
+                </div>
+            </div>
+            <div class="calculator">
+            <span class="arrange">Tip</span>
+            <span id="tip-amount" class="values">
+                $0
+            </span>
+
+        </div>
+        <hr>
+        <div class="calculator">
+            <span class="arrange">Total Amount</span>
+            <span id="total-amount"
+            class="values">$0</span>
+        </div> 
+    </section>
+    <section>
+        <div class="calculator">
+            <label for="tip" class="arrange">
+                Tip %
+            </label>
+            <span id="tip-percent" class="values">
+                0
+            </span>
+        </div>
+        <input type="range" min="1" id="tip"
+        value="15">
+        <div class="calculator">
+            <label for="no-of-people"
+            class="arrange">
+                No of people
+            </label>
+            <span id="split-num" class="values">
+                0
+            </span>
+        </div>
+        <input type="range" min="1" max="15"
+        id="no-of-people" value="1">
+    </section>
+        <div class="calculator">
+            <span class="arrange">
+                Tip per person
+
+            </span>
+            <span id="tip-per-person"
+            class="values">
+                $0
+            </span>
+        </div>
+        <div class="calculator">
+            <span class="arrange">
+                Total per person
+            </span>
+            <span id="total-per-person"
+            class="values">
+                $0
+            </span>
+        </div>
+    </section>
+</div>
+    </form>
+<script src="TipJS.js"></script></form>
+</body>
+</html>
